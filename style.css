@@ -1,0 +1,101 @@
+#inicio {
+    background-color: rgb(113, 23, 197);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#barraNavegação {
+    background-color: rgba(255, 136, 136, 0.46);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@keyframes anim {
+    0% {
+        background-color: #f00;
+    }
+
+    20% {
+        background-color: #ff0;
+    }
+
+    40% {
+        background-color: #0f0;
+    }
+
+    60% {
+        background-color: #0ff;
+    }
+
+    80% {
+        background-color: #00f;
+    }
+
+    100% {
+        background-color: #f00;
+    }
+}
+
+body {
+    background-color: rgba(250, 210, 161, 0.604);
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    animation-name: anim;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+hr {
+    border: 1px solid;
+    border-color: rgb(107, 86, 59);
+    width: 250px;
+}
+
+table {
+    border: 2px solid;
+}
+
+tr,
+td {
+    border: 1px solid;
+    width: 200px;
+    text-align: center;
+}
+
+#cabecalho {
+    background-color: aqua;
+    font-weight: bolder;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+img:hover {
+    width: 40%;
+    height: 40%;
+}
+
+#barraNavegacao {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu {
+    display: inline-block;
+    color: crimson;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    width: auto;
+    border: rgb(0, 0, 0)solid;
+    border-radius: 20px solid;
+    border-style: inherit;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

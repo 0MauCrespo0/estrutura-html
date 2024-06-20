@@ -1,0 +1,258 @@
+<!--Declara ao navegador que o documento é do tipo html-->
+<!DOCTYPE html>
+
+<!--Este elemento define o início do documento HTML e especifica o idioma principal da página como português Brasil-->
+<html lang="pt-br"><!-- TAG de abertura html -->
+
+<!--Esta seção contém metadados e informações sobre o documento HTML, que não são diretamente visíveis na página web.-->
+
+<head><!-- TAG de abertura head -->
+
+    <!--Define o conjunto de caracteres utilizado no documento como UTF-8, que dá suporte para representar corretamente caracteres especiais e internacionais.-->
+    <meta charset="UTF-8">
+
+    <!--Configura a escala inicial e o comportamento de largura para dispositivos móveis, permitindo que a página se adapte de maneira responsiva a diferentes tamanhos de tela.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Define o título da página, que é exibido na barra de título do navegador. Neste caso, o título padrão é "Document", mas deve ser substituído por um título mais descritivo que represente o conteúdo da página.-->
+    <title>pastinha</title>
+    <!--conexão HTML ao CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--O atributo rek="stylesheet" é utilizado dentro da TAG <link> do HTML para indicar ao navegador que o arquivo referenciado contem estilos CSS a serem aplicdos aos elementos da pagina.-->
+    <script defer type="text/javascript" src="main.js"></script>
+</head><!-- TAG de fechamento head -->
+<!-- Início da seção principal do documento (corpo da página) -->
+
+<body> <!-- TAG de abertura body -->
+    <section id="inicio">
+        <h1>ESTRUTURA HTML</h1>
+    </section>
+    <hr>
+    <nav id="barraNavegacao">
+        <li class="menu"><a href="#titulo">Titulos</a></li>
+        <li class="menu"><a href="#links">Links</a></li>
+        <li class="menu"><a href="#listas">Listinhas</a></li>
+        <li class="menu"><a href="#tabelas">Tabelinhas</a></li>
+        <li class="menu"><a href="#images">Imagenzinhas</a></li>
+        <li class="menu"><a href="#VIDIO">Vidinhos</a></li>
+        <li class="menu"><a href="#audios">Audiozinhos</a></li>
+        <li class="menu"><a href="#CSS">exp1</a></li>
+        <li class="menu"><a href="#javascript">exp2</a></li>
+
+    </nav>
+    <hr>
+
+    <!-- Conteúdo da página é inserido aqui -->
+    <section id="titulo">
+        <h1>TAGS DE TíTULO</h1>
+        <p>As TAGS do tipo H são TAGS de titulo, e o numero que a acompanha indica a sua hierarquia h1:</p>
+        <h1>Esta é a configuração de texto para a TAG
+            h1
+        </h1>
+        <p>h2:</p>
+        <h2>Esta é uma TAG do tipo h2</h2>
+        <p>h3:</p>
+        <h3>Esta é a configuração de texto para a TAG h3</h3>
+        <p>h4:</p>
+        <h4>Esta é uma TAG do tipo h4</h4>
+        <p>h5:</p>
+        <h5>Esta é a configuração de texto para a TAG h5</h5>
+        <p>h6:</p>
+        <h6>Esta é uma TAG do tipo h6</h6>
+
+        <p>tambem temos a TAG p, que é utilizada para <br> quando precisamos escrever parágrafo</p>
+    </section>
+    <hr>
+    <section id="links">
+        <h1>inserindo links</h1>
+        <p>Vamos criar um link para que nosso usuario conheça o SENAI. O comando para criamos um link é a TAG a.
+            Se definirmos a target como:
+            _blank: abre a pagina em uma nova janela/aba;
+            _self: abre a pagina pagina na mesma janela;
+            _parent: abre a pagina na mesma janela do link:;</p>
+        <a href="https://sp.senai.br/cursos?unidade=569" target="_blank">Conheça o SENAI</a>
+    </section>
+    <hr>
+    <section>
+        <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">NÃO CLIQUE</a>
+    </section>
+    <hr>
+    <section id="listas">
+        <h1>LISTAS</h1>
+        <P>para criar a lista usamos a TAG ul, para criar os itens da lista utilizamos a TAG li. Fui me matricular no
+            SENAI e precisei levar:
+        <ul>
+            <li>RG</li>
+            <li>Comprovante de endereço</li>
+            <li>CPF</li>
+            <li>Comprovante de escolaridade</li>
+        </ul>
+        </P>
+        <p>Para criar uma lista numerada utilizamos a TAG ol e para criar os elementos utilizo a TAG li. Estão
+            matriculados comigo na turma mus amigos:
+        <ol>
+
+            <li>Clara</li>
+            <li>Linguine</li>
+            <li>Keke</li>
+            <li>jHOW</li>
+            <li>LEONA</li>
+            <LI>LANZA</LI>
+            <LI>LOLA</LI>
+            <LI>Jaum</LI>
+        </ol>
+
+        </p>
+    </section>
+    <hr>
+    <section id="tabelas">
+        <h1>Tabelas</h1>
+        <p>A tabela é uma estrutura composta de linhas e colunas, com inumeras possibilidades de fprmatação. para
+            construir uma tabela usamos a TAG table, para construir uma linha usamos a TAG tr, e para criar uma coluna
+            usamos a TAG td.</p>
+        <table>
+            <tr id="cabecalho">
+                <!--primeira linha-->
+                <td>Curso</td><!--primeira coluna-->
+                <td>Turno</td><!--segunda coluna-->
+            </tr>
+            <tr><!--segunda linha-->
+                <td>Desenvolvimento javaScriptado</td><!--primeira coluna-->
+                <td>Manha</td><!--segunda coluna-->
+            </tr>
+            <tr><!--terceira linha-->
+                <td>Microsoft ai-900</td><!--primeira coluna-->
+                <td>Tard</td><!--segunda coluna-->
+            </tr>
+            <tr><!--quarto-->
+                <td>Programação Oracle Java</td><!--primeira coluna-->
+                <td>Manha</td><!--segunda coluna-->
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <section id="images">
+        <p>É comum querermos ou precisarmos inserir imagens na nossa pagina web. Isto deixa o site atraente e se voce
+            esta desenvolvendo uma loja virtual isto é essencial. Para isso utilizamos a TAG img</p>
+        <img src="https://cronos-media.sesisenaisp.org.br//api/media/1-0/files?img=img_1_230824_71d370d1-e6d4-4d79-8cb0-5e30a1d7cb75_o.jpeg&tipo=g"
+            alt="Imagem SENAI Paulinia">
+        <br>
+        <br>
+        <img src="download.png" alt="foto logo SENAI">
+        <section>
+            <hr>
+            <section id="VIDIO">
+            </section>
+        </section>
+        <p>
+            hoje os videos são otimos recursos visuais, quase todos os sites necessitam desse recurso, para a
+            demonstração de um serviço.podemos inserir um video em nossa pagina web por meio da TAG video:
+        </p>
+        <h1>
+            conheça o SENAI
+        </h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pRHzSpmhlrM?si=AzxDDKypwHJSWKKy"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <br>
+        <video src="senai.mp4" controls></video>
+    </section>
+    <hr>
+    <section id="audios">
+        <h1>audios</h1>
+        <br>
+        <br>
+        <p>Para incorporar os arquivos de audio em nossa pagina web utilizamos a TAG audio</p>
+        <audio src="smoke.mp3" controls>Exemplo de audio</audio>
+    </section>
+
+    <section id="CSS">
+        <h1>Explicação CSS</h1>
+        <p>
+            CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para definir a apresentação e o layout de
+            documentos HTML. Ele permite personalizar elementos como fontes, cores, espaçamento, bordas, alinhamento,
+            entre outros. Com CSS, é possível estilizar não apenas o conteúdo HTML, mas também elementos como tabelas,
+            listas, parágrafos e até mesmo linhas e bordas. Como exemplo ficam as estilizações que realizamos nesta
+            página web.
+            <br>
+            Para tanto precisamos criar um novo documento na pasta do nosso projeto, que deverá conter a extenção .css.
+            Como este é um arquivo diferente do html precisamos realizar a conexão entre eles assim na tag head
+            precisamos conectar por meio da tag link, como na figura abaixo, sendo o style.css o nome dado seguido da
+            extensão do arquivo.
+        </p>
+    </section>
+    <section>
+        <img src="conexaojs.png" alt="foto conexao js">
+    </section>
+
+    <section id="javascript">
+        <h1>java script</h1>
+        <p>
+            JavaScript (JS) é uma linguagem de programação utilizada principalmente para adicionar interatividade e
+            dinamismo a páginas web. Com o JS, é possível criar efeitos visuais, validar formulários, manipular
+            elementos da página, criar animações e até mesmo realizar requisições assíncronas para atualizar conteúdo
+            sem recarregar a página.
+            <br>
+            Para tanto precisamos criar um novo documento na pasta do nosso projeto, que deverá conter a extenção .js.
+            Como este é um arquivo diferente do html precisamos realizar a conexão entre eles assim na tag head
+            precisamos conectar por meio da tag script, como na figura abaixo, sendo o main.js o nome dado seguido da
+            extensão do arquivo.
+        </p>
+    </section>
+    <section>
+        <img src="conexaojs (1).png" alt="ffoto conexão javascript">
+    </section>
+    <section>
+        <h1>Exemplos de Aplicações do JS</h1>
+        <br>
+        <h3>Calculadora Simples</h3>
+        <h2>SOMA</h2>
+        <p>primeiro numero</p>
+        <input id="enterone" type="number" placeholder="Digite um n°">
+        <p>Segundo Numero</p>
+        <input id="entertwo" type="number2" placeholder="Digite um n°">
+        <button onclick="somar()">somagem</button>
+        <button onclick="subtrair()">tiração</button>
+        <button onclick="dividir()">dividição</button>
+        <button onclick="multiplicar()">multiplication</button>
+        <button onclick="limpar()">limpamento</button>
+
+        <p>Resultado</p>
+        <input id="resultado" type="number">
+        <p id="resultadoB">Resultado
+        </p>
+        </section>
+
+
+        <section>
+            <p>se quiser sim</p>
+            <img src="apagado.jpeg" alt="luz apagada">
+            <img src="acesa.jpeg" alt="luz acesa">
+        </section>
+
+
+
+        <SECtion>
+            <H1>Calculadora de IMC</H1>
+            <br>
+            <p>Digite seu peso</p>
+            <input id = "peso" type="number" placeholder="peso">
+            <p>Digite sua altura</p>
+            <input id = altura type="number" placeholder="altura">
+            <p>IMC</p>
+            <button onclick="imc()">Calcular</button>
+            <input id = "calcular" type="number" placeholder="calcular">
+            <p>Considerações</p>
+            <p id = "consideracoes"></p>
+
+            
+        </SECtion>
+    <hr>
+<nav>
+        <li><a href="#inicio">voltar ao inicio</a></li>
+    </nav>
+</body><!-- TAG de fechamento body -->
+
+</html><!-- TAG de fechamento html -->
